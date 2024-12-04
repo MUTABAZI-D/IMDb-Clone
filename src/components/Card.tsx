@@ -9,8 +9,8 @@ type Props = {
 
 export const Card = ({ result }: Props) => {
   return (
-    <div className="group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2">
-      <Link href={`movie/${result.id}`}>
+    <div className="group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 min-h-[320px] mb-3">
+      <Link href={`/movie/${result.id}`}>
         <div className="relative h-[200px] w-full">
           <Image
             fill

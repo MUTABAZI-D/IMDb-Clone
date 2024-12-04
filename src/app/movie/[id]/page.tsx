@@ -36,6 +36,7 @@ export default async function MoviePage({ params }: Props) {
           className="rounded-lg"
           style={{ maxWidth: "100%", height: "100%" }}
         />
+
         <div className="p-2">
           <h2 className="text-lg font-bold mb-3">
             {movie.title || movie.name}

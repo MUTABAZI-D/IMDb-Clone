@@ -9,8 +9,11 @@ import { SearchBox } from "@/components/SearchBox";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IMDb clone",
+  title: { default: "IMDb clone", template: "%s | IMDb" },
   description: "This is a movie database clone",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
