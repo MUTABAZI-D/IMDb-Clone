@@ -9,7 +9,7 @@ type Props = {
 };
 
 export default async function Home({ searchParams }: Props) {
-  const genre = searchParams.genre || "fetchTrending";
+  const genre = searchParams.genre || "fetchTopRated";
   const res = await fetch(
     `https://api.themoviedb.org/3${
       genre === "fetchTopRated" ? `/movie/top_rated` : `/trending/all/week`
