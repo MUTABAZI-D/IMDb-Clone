@@ -15,10 +15,8 @@ export const MenuItem = ({ address, title, children }: Props) => {
   return (
     <Link
       href={address}
-      className={`hover:text-amber-500 ${
-        isActive
-          ? "text-amber-500 font-bold"
-          : "text-gray-900 hover:text-amber-500"
+      className={`hover:text-amber-500 font-bold ${
+        isActive ? "text-amber-500" : "text-gray-900 hover:text-amber-500"
       }`}
     >
       {children}

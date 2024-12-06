@@ -24,7 +24,6 @@ export default async function Home({ searchParams }: Props) {
   }
 
   const results = data.results;
-  console.log(results);
 
   return (
     <div>
